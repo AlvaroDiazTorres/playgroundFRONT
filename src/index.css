@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Tenon';
+  src: url('./assets/fonts/Tenon.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{
+  font-family: 'Tenon';
+}
