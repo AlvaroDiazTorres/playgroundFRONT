@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import type { UserProps } from '../models/User';
 import logo from '../assets/logos/logo_colores.png';
