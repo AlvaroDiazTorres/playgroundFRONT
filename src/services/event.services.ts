@@ -26,7 +26,7 @@ export class EventService {
     }
 
     static async create(evento: Partial<Evento>) {
-        return await fetchAPI(API_URL_BASE+'/eventos', {
+        return await fetchAPI(`${API_URL_BASE}/eventos`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export class EventService {
     }
 
     static async update(id:number, evento: Partial<Evento>) {
-        return await fetchAPI(API_URL_BASE+'/eventos/'+id, {
+        return await fetchAPI(`${API_URL_BASE}/eventos/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ export class EventService {
         })
     }
     static async delete(id: number){
-        return await fetchAPI(API_URL_BASE+'/eventos/'+id, {
+        return await fetchAPI(`${API_URL_BASE}/eventos/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

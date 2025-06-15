@@ -29,7 +29,7 @@ const CheckoutForm = ({ evento, quantity, email, onSuccess }: {
     setError(null);
 
     try {
-      const response = await fetch('/api/payments/create-payment-intent', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/payments/create-payment-intent`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
