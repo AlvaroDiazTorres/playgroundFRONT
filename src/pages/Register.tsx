@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import saponganbachata from '../assets/logos/saponganbachata.png';
+import conejarana from '../assets/logos/conejarana.png';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -56,8 +58,8 @@ const Register = () => {
 
   return (
     <div className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      <img src="src/assets/logos/saponganbachata.png" alt="Saponganbachata" className="hidden md:block fixed left-0 top-1/2 -translate-y-1/2 max-h-[80vh] w-auto opacity-40 pointer-events-none z-10" />
-      <img src="src/assets/logos/conejarana.png" alt="Conejarana" className="hidden md:block fixed right-0 top-1/2 -translate-y-1/2 max-h-[80vh] w-auto opacity-40 pointer-events-none z-10" />
+      <img src={saponganbachata} alt="Saponganbachata" className="hidden md:block fixed left-0 top-1/2 -translate-y-1/2 max-h-[80vh] w-auto opacity-40 pointer-events-none z-10" />
+      <img src={conejarana} alt="Conejarana" className="hidden md:block fixed right-0 top-1/2 -translate-y-1/2 max-h-[80vh] w-auto opacity-40 pointer-events-none z-10" />
       <div className="max-w-md w-full space-y-8 z-20 mx-auto">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
