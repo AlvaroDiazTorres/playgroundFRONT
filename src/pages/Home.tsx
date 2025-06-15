@@ -2,6 +2,7 @@ import Cartel from "../components/Cartel";
 import { Link } from "react-router-dom";
 import frontImage from '../assets/carteles/Cartel_Evento_01.jpg';
 import backImage from '../assets/folletos/Folleto_Evento_01.jpg';
+import personajes from '../assets/logos/personajes.png';
 export default function Home() {
 
   return (
@@ -26,7 +27,7 @@ export default function Home() {
       </div>
 
       <footer className="sticky top-full bottom-0 pt-2 z-50">
-        <img className="sticky" src="src/assets/logos/personajes.png" alt="Party animals" />
+        <img className="sticky" src={personajes} alt="Party animals" />
       </footer>
     </>
   )
