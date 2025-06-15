@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("/api/auth/user", { credentials: "include" });
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/user`, { credentials: "include" });
         if (res.ok) {
           const data = await res.json();
           setUser(data); // Ajusta si tu backend devuelve {user: {...}}

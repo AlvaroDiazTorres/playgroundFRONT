@@ -1,9 +1,9 @@
 import Cartel from "../components/Cartel";
 import { Link } from "react-router-dom";
-
+import frontImage from '../assets/carteles/Cartel_Evento_01.jpg';
+import backImage from '../assets/folletos/Folleto_Evento_01.jpg';
 export default function Home() {
-        const frontImage = 'src/assets/carteles/Cartel_Evento_01.jpg';
-        const backImage = 'src/assets/folletos/Folleto_Evento_01.jpg';
+
   return (
     <>
        <div className="flex flex-col">

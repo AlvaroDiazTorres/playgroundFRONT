@@ -1,7 +1,7 @@
 import type Evento from "../models/Evento";
 import { fetchAPI } from "../utils/FetchAPI"
 
-const API_URL_BASE = "http://localhost:3000/api"
+const API_URL_BASE = import.meta.env.VITE_API_URL;
 
 export class EventService {
     static async getAll() {

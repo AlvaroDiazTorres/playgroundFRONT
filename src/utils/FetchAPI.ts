@@ -1,6 +1,6 @@
 export const fetchAPI = async (endPoint: string, options = {}) => {
   try {
-    const response = await fetch(endPoint, options);
+    const response = await fetch(`${import.meta.env.VITE_API_URL}${endPoint}`, options);
 
     if (response.status == 401) {
       window.location.href = "/login";

@@ -14,7 +14,7 @@ const Login = ({ setUser }: LoginProps) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -24,8 +24,7 @@ const Login = ({ setUser }: LoginProps) => {
       });
 
       if (response.ok) {
-        // Fetch user data after successful login
-        const userResponse = await fetch('/api/auth/user', {
+        const userResponse = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/user`, {
           credentials: 'include'
         });
         if (userResponse.ok) {
